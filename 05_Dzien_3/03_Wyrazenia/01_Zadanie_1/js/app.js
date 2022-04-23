@@ -1,7 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+function CalculateUserData() {
+    const firstnumber = parseFloat(prompt("Podaj liczbe a prosze:"));
+    const secendnumber = parseFloat(prompt("Podaj liczbe b prosze:"));
+
+    return <div>{firstnumber + secendnumber}</div>;
+}
+
 ReactDOM.render(
-  <h1>Hello, World!</h1>,
+  <CalculateUserData/>,
   document.getElementById("app")
 );
