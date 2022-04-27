@@ -2,14 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import animals from './data/animals';
 
-function zwierzeta(array){
-    let animalstring = array.join();
-    return animalstring;
+
+function showAnimals(array){
+    let str = array.join(" and ");
+    return str
 }
 
-console.log(zwierzeta(animals));
+
+function App(){
+    return <h1>{showAnimals(animals)}</h1>
+}
 
 ReactDOM.render(
-  <h1>Hello, World!</h1>,
+  <App contentEditable={ true }/>,
   document.getElementById("app")
 );

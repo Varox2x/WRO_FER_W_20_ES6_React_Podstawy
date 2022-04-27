@@ -1,7 +1,18 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
+function LikeBox(){
+    return (
+        <div>
+            <span>100 likes</span>
+            <button>Lubie to!</button>
+        </div>
+
+    )
+}
+
+
 ReactDOM.render(
-  <h1>Hello, World!</h1>,
+  <LikeBox/>,
   document.getElementById("app")
 );
